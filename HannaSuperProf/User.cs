@@ -23,6 +23,7 @@ public class User {
         this.kst = kst;
     }
 
+
     public int PersID {
         get => persID;
         set => persID = value;
@@ -64,7 +65,7 @@ public class User {
     }
 
     public override string ToString() {
-        return $"{persID} {name}";
+        return $"User: {persID} {name} {date} {firstTime} {secondTime} {hour} {kstCode} {kst}";
     }
 
     public bool compareUser(User other) {

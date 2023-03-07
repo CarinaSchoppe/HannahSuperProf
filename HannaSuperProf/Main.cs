@@ -9,6 +9,7 @@ namespace HannaSuperProf;
 public class Main {
     public static void Start() {
         var users = ReadInCsvFile();
+        var differences = compareDifferences(users, ConnectToDatabase());
         foreach (var user in users) {
             Console.WriteLine(user);
         }
